@@ -8,6 +8,7 @@ import Yellow from './components/yellow';
 import Green from './components/green';
 import White from './components/white';
 import Black from './components/black';
+
 class App extends Component {
     
     constructor(props){
@@ -37,7 +38,7 @@ class App extends Component {
       </div>
     );
   }
-}
+
 
 queries(busca)
 {
@@ -46,5 +47,5 @@ queries(busca)
         query:busca
     });
 }
-
+}
 export default App;

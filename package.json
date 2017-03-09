@@ -2,6 +2,7 @@
   "name": "node_express_flickr",
   "version": "0.1.0",
   "private": true,
+"homepage": "http://nvasquez97.github.io/FlickrPictures",
   "dependencies": {
     "axios": "^0.15.3",
     "express": "^4.15.2",

@@ -13,7 +13,9 @@ class Yellow extends Component {
     render()
     {
         <div>
-            
+            <p>
+            {this.props.query}
+        </p>
         </div>
     }
     
@@ -30,4 +32,4 @@ class Yellow extends Component {
     }
 }
 
-export default App;
+export default Yellow;

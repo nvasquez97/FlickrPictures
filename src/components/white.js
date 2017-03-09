@@ -13,7 +13,9 @@ class White extends Component {
     render()
     {
         <div>
-            
+            <p>
+            {this.props.query}
+        </p>
         </div>
     }
     
@@ -30,4 +32,4 @@ class White extends Component {
     }
 }
 
-export default App;
+export default White;
