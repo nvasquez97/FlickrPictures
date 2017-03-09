@@ -12,11 +12,13 @@ class Purple extends Component {
     }
     render()
     {
-        <div>
+        return(
+            <div className="columna">
             <p>
-            {this.props.query}
-        </p>
+            Hey
+            </p>    
         </div>
+        );
     }
     
     upDateFotos()

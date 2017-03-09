@@ -12,11 +12,14 @@ class Blue extends Component {
     }
     render()
     {
-        <div>
+        return(
+            <div className="columna">
             <p>
-            {this.props.query}
+            Hey
             </p>    
         </div>
+        );
+        
     }
     
     upDateFotos()

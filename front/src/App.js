@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Blue from './components/blue';
 import Red from './components/red';
 import Purple from './components/purple';
@@ -21,13 +19,14 @@ class App extends Component {
     
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <div className="jumbotron">
         <h1>
         Seacrh pictures, by color!
         </h1>
         <input onChange={event=>{this.queries(event.target.value)}}/>
-        </div className="container columnas">
+        </div>
+        <div className="container columnas">
         <Blue query={this.state.query}/>
         <Red query={this.state.query}/>
         <Purple query={this.state.query}/>
@@ -35,6 +34,7 @@ class App extends Component {
         <Green query={this.state.query}/>
         <White query={this.state.query}/>
         <Black query={this.state.query}/>
+        </div>
       </div>
     );
   }
