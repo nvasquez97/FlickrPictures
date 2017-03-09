@@ -15,7 +15,7 @@ class Blue extends Component {
         <div>
             <p>
             {this.props.query}
-        </p>
+            </p>    
         </div>
     }
     

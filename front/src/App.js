@@ -27,7 +27,7 @@ class App extends Component {
         Seacrh pictures, by color!
         </h1>
         <input onChange={event=>{this.queries(event.target.value)}}/>
-        </div>
+        </div className="container columnas">
         <Blue query={this.state.query}/>
         <Red query={this.state.query}/>
         <Purple query={this.state.query}/>
