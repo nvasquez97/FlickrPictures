@@ -29,7 +29,7 @@ class Black extends Component {
     
     upDateFotos()
     {
-        var buscar = this.state.color;
+        var buscar =this.props.getQuery()+','+ this.state.color;
         axios.get(URL+'/'+buscar).then(response => {
             this.setState(
             {   

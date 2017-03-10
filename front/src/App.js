@@ -19,16 +19,9 @@ class App extends Component {
         }
     }
     
-    getUrl(foto) {
-        return "https://farm"+
-            foto.farm +
-            ".staticflickr.com/" +
-            foto.server +
-            "/"+
-            foto.id+
-            "_" +
-            foto.secret +
-            "_s.jpg";
+    getQuery()
+    {
+        return this.state.query;
     }
     
   render() {
@@ -42,26 +35,17 @@ class App extends Component {
         <h3>{this.state.hazClick}</h3>
         </div>
         <div className="container columnas">
-        <Blue updateFotos={this.updateFotosB.bind(this)} getUrl={this.getUrl.bind(this)}/>
-        <Red query={this.state.query} getUrl={this.getUrl.bind(this)}/>
-        <Purple query={this.state.query} getUrl={this.getUrl.bind(this)}/>
-        <Yellow query={this.state.query} getUrl={this.getUrl.bind(this)}/>
-        <Green query={this.state.query} getUrl={this.getUrl.bind(this)}/>
-        <White query={this.state.query} getUrl={this.getUrl.bind(this)}/>
-        <Black updateFotos={this.updateFotosB.bind(this)}/>
+        <Blue getQuery={this.getQuery.bind(this)}/>
+        <Red getQuery={this.getQuery.bind(this)}/>
+        <Purple getQuery={this.getQuery.bind(this)}/>
+        <Yellow getQuery={this.getQuery.bind(this)}/>
+        <Green getQuery={this.getQuery.bind(this)}/>
+        <White getQuery={this.getQuery.bind(this)}/>
+        <Black getQuery={this.getQuery.bind(this)}/>
         </div>
       </div>
     );
   }
-  
-  updateFotosB()
-    {
-        var buscar =this.state.query+',black';
-        console.log('buscar: '+buscar);
-        axios.get(URL+'/'+buscar).then(response => {
-            return response.data;
-          });        
-    }
 
 
 queries(busca)
