@@ -13,9 +13,9 @@ class White extends Component {
     render()
     {
         return(
-            <div className="columna">
+            <div className="container columna white" onClick={this.upDateFotos.bind(this)}>
             <p>
-            Hey
+            {this.state.color}
             </p>    
         </div>
         );
@@ -23,7 +23,7 @@ class White extends Component {
     
     upDateFotos()
     {
-        var buscar =this.props.query+' '+this.state.color;
+        var buscar =this.props.query+','+this.state.color;
         console.log('buscar: '+buscar);
         axios.get(URL+'/'+buscar).then(response => {
             console.log(response);

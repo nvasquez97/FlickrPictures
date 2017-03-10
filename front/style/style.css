@@ -1,9 +1,61 @@
-
-.margen {
-  margin-top: 40px;
-  padding-top: 40px;
+.columnas{
+    display:inline-block;
 }
 
-.buscador input {
-  min-width: 75%;
+.columna{
+    display:inline-block;
+    float:left;
+    max-width: 13%;
+    padding:4px;
+}
+
+.yellow{
+    color:rgba(200,200,50,0.5);
+}
+
+.yellow:hover{
+    background-color:rgba(200,200,50,0.5);
+}
+
+.black{
+    color:rgba(0,0,0,0.5);
+}
+
+.black:hover{
+    background-color:rgba(0,0,0,0.5);
+}
+
+.blue{
+    color:rgba(10,64,154,0.5);
+}
+
+.blue:hover{
+    background-color: rgba(10,64,154,0.5);
+}
+
+.purple:hover{
+    background-color:rgba(100,64,154,0.5);
+}
+.purple{
+    color:rgba(100,64,154,0.5);
+}
+
+.red:hover{
+    background-color:rgba(200,10,10,0.5);
+}
+
+.red{
+    color:rgba(200,10,10,0.5);
+}
+
+.white:hover{
+    color:white;
+}
+
+.green{
+    color:rgba(10,100,10,0.5);
+}
+
+.green:hover{
+    color:rgba(10,100,10,0.5);
 }
