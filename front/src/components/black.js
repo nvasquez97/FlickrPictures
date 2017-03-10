@@ -21,8 +21,7 @@ class Black extends Component {
             {this.state.color}
             </p>    
             {this.state.fotos.map(foto => {
-                return <img src={this.getUrl(foto)} alt="foto"/>
-          console.log(this.getUrl(foto))
+                return <div key={foto.id} ><img src={this.getUrl(foto)} alt="foto"/></div>
             })}
         </div>
         );
